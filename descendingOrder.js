@@ -11,3 +11,14 @@ function descendingOrder(n) {
   const result = parseInt(sortedString);
   return result;
 }
+
+//Alt way
+function descendingOrder(n) {
+  let nToStr = n
+    .toString()
+    .split("")
+    .sort((a, b) => a - b)
+    .reverse()
+    .join("");
+  return Number(nToStr);
+}
