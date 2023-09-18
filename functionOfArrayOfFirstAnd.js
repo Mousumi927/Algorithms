@@ -10,3 +10,19 @@ function countBy(x, n) {
   return z;
 }
 countBy(3, 4);
+
+//alt way
+
+function countBy(x, n) {
+  const z = [];
+  let count = 1;
+
+  while (z.length < n) {
+    z.push(x * count);
+    count++;
+  }
+
+  return z;
+}
+
+console.log(countBy(3, 4));
