@@ -13,3 +13,17 @@ function getCount(str) {
   }
   return countOfVowels;
 }
+
+//alt way
+function getCount(str) {
+  let countOfVowels = 0;
+  const vowels = "aeiou";
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      countOfVowels++;
+    }
+  }
+
+  return countOfVowels;
+}
