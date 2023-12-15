@@ -57,3 +57,5 @@ function getPlanetName(id) {
 
   return name;
 }
+
+//alt way
