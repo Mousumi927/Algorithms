@@ -11,3 +11,5 @@ const sortedDoubledArray = doubleAndSort(originalArray);
 
 console.log("Original array:", originalArray);
 console.log("Sorted and doubled array:", sortedDoubledArray);
+
+Alt way:
