@@ -21,4 +21,14 @@ const inputString = "Hello World";
 const reversedString = reverseWords(inputString);
 console.log(reversedString);
 
-//test 
+//alt way
+function reverseWords(input) {
+  return input
+    .split(' ')  
+    .map(word => word.split('').reverse().join(''))  
+    .join(' ');  
+}
+
+//const inputString = "Hello World";
+//const reversedString = reverseWords(inputString);
+console.log(reversedString);
