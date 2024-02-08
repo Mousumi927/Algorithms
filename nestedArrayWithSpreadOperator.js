@@ -18,3 +18,15 @@ const nestedArray = [1, [2, [3, 4]], 5, [6]];
 const flattenedArray = flattenArray(nestedArray);
 
 console.log(flattenedArray);
+
+//alt way
+function flattenArray(arr) {
+  return arr.reduce((flat, toFlatten) => {
+    return flat.concat(Array.isArray(toFlatten) ? flattenArray(toFlatten) : toFlatten);
+  }, []);
+}
+
+const nestedArray = [1, [2, [3, 4]], 5, [6]];
+const flattenedArray = flattenArray(nestedArray);
+
+console.log(flattenedArray);
