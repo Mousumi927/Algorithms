@@ -14,8 +14,8 @@ function flattenArray(arr) {
   return flattenedArray;
 }
 
-const nestedArray = [1, [2, [3, 4]], 5, [6]];
-const flattenedArray = flattenArray(nestedArray);
+// const nestedArray = [1, [2, [3, 4]], 5, [6]];
+// const flattenedArray = flattenArray(nestedArray);
 
 console.log(flattenedArray);
 
